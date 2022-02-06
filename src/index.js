@@ -1,3 +1,9 @@
+function getEmoji() {
+
+    return '🧉';
+
+}
+
 function getName() {
 
     return 'JavaScript';
@@ -18,5 +24,6 @@ function getStatus() {
 
 module.exports = {
     getName,
-    getStatus
+    getStatus,
+    getEmoji
 };
