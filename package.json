@@ -1,6 +1,6 @@
 {
   "name": "@carrot-lang/javascript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The official EcmaScript language plugin for the Carrot Programming Language.",
   "main": "src/index.js",
   "scripts": {
