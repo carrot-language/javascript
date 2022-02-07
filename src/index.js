@@ -1,3 +1,25 @@
+const components = require('./components').getComponents();
+
+function parseObject(object) {
+
+    return components[object.type](object, parseObject);
+
+}
+
+function parseFile(data) {
+
+    let output = "";
+
+    data.body.forEach((element) => {
+
+        output += parseObject(element);
+
+    });
+
+    return output;
+
+}
+
 function getEmoji() {
 
     return '🧉';
@@ -25,5 +47,6 @@ function getStatus() {
 module.exports = {
     getName,
     getStatus,
-    getEmoji
+    getEmoji,
+    parseFile
 };
